@@ -1,7 +1,7 @@
 # Sociology & Tech
 
 ### Education
-University of Colorado Boulder, MS in Creative Technology & Design at ATLAS Institute
+CU Boulder, MS in ATLAS Creative Technology & Design 
 Emory University, BA in Sociology and Integrated Visual Arts
 
 ### Research Interests
