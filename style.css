@@ -102,7 +102,7 @@ body {
   margin:45px auto;
 }
 header, #content, footer { 
-  background: rgba(61,133,198,0); 
+  background: rgba(173, 216, 230, 0.9);
   padding:25px;
   color:#3D85C6; 
 }
