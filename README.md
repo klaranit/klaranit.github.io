@@ -1,4 +1,14 @@
-# Sociology & Tech
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Klara Nitsche</b></td>
+    <td><b style="font-size:30px">Materiality in Society & Tech</b></td>
+ </tr>
+ <tr>
+    <td>Lorem ipsum ...
+    ![Photo of Klara Nitsche](MeGradPhoto copy.JPEG)</td>
+    <td>Lorem ipsum ...</td>
+ </tr>
+</table>
 
 ### Education
 CU Boulder, MS in ATLAS Creative Technology & Design 
