@@ -1,5 +1,5 @@
 
-![Photo of Klara Nitsche](MeGradPhoto copy.JPEG)
+![Photo of Klara Nitsche](MeGradPhoto.JPEG)
 ### Education
 CU Boulder, MS in ATLAS Creative Technology & Design 
 Emory University, BA in Sociology and Integrated Visual Arts
