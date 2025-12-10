@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  color: #333;
 }
 
 /**
@@ -20,7 +20,7 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color:#333;
 }
 a:focus {
   outline: thin dotted;
@@ -97,17 +97,15 @@ html {
   background-size:cover;
 }
 body {
-  background-color:#3D85C6;
   max-width:1000px;
   margin:45px auto;
 }
 header, #content, footer { 
-  background: rgba(173, 216, 230, 0.9);
+  background: rgba(173, 216, 230, 0.5);
   padding:25px;
   color:#3D85C6; 
 }
 iframe {
-  background-color:#3D85C6;
   max-width:100%;
 }
 
