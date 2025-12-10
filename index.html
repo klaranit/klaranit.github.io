@@ -1,70 +1,79 @@
-<header>
-  <nav>
-    <ul class="main-menu">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Klara Nitsche</title>
+    <meta name="description" content="Klara Nitsche academic research and portfolio">
+    <meta name="author" content="Klara Nitsche academic">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-<div id="content">
-  <!-- About Section -->
-  <section class="about-section">
-    <div class="about-image">
-      <img src="profile.jpg" alt="Your Name">
-    </div>
-    <div class="about-text">
-      <h1>Your Name</h1>
-      <p>Web Developer & Designer passionate about creating beautiful, functional websites.</p>
-    </div>
-  </section>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-  <!-- Skills -->
-  <section class="section-spacing">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <span class="skill-tag">HTML/CSS</span>
-      <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">React</span>
-      <span class="skill-tag">Design</span>
-    </div>
-  </section>
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
 
-  <!-- Portfolio Grid -->
-  <section class="section-spacing">
-    <h2>My Work</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-        <div class="portfolio-item-content">
-          <h3>Project Name</h3>
-          <p>Brief description of the project</p>
-          <a href="#" class="btn">View Project</a>
+    <header id="header">
+      <img src="logo.png">
+      <h1>Klara Nitsche</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="home" class="content-region hide">
+            <h2>Home</h2>
+            <p>
+              I am an artist and researcher interested in material interactions. Currently, I am interested in human-robot-interactions guided by materiality and material culture.
+            </p>
+          </div>
+          
+          <div id="about" class="content-region hide">
+            <h2>Portfolio</h2>
+            <p>
+              My works range from art installations, typefaces, reports, and robot simulations.  
+            </p>
+          </div>
+          
+          <div id="contact" class="content-region hide">
+            <h2>Contact</h2>
+            <p>
+              You can find me at: 
+            </p>
+          </div>
+          
         </div>
       </div>
-      <!-- Add more portfolio items -->
     </div>
-  </section>
 
-  <!-- Contact Form -->
-  <section class="section-spacing">
-    <h2>Get In Touch</h2>
-    <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  </section>
-</div>
+    <footer>  
+      Footer region
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+</html>
