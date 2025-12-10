@@ -91,7 +91,7 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
-html, #container, .inner { background-color: #ADD8E6;}
+html, #container, .inner { background: rgba(61,133,198,0);   color:#3D85C6;}
 html {
   background:url(background.jpg) center center no-repeat fixed;
   background-size:cover;
@@ -101,7 +101,7 @@ body {
   margin:45px auto;
 }
 header, #content, footer { 
-  background: rgba(61,133,198,.8); 
+  background: rgba(61,133,198,0); 
   padding:25px;
   color:#3D85C6; 
 }
