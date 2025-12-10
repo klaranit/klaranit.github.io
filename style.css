@@ -102,8 +102,7 @@ body {
 }
 header, #content, footer { 
   background: rgba(173, 216, 230, 0.5);
-  padding:25px;
-  color:#3D85C6; 
+  padding:25px; 
 }
 iframe {
   max-width:100%;
