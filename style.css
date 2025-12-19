@@ -91,7 +91,7 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
-html, #container, .inner { background-color:#3D85C6;}
+html, #container, .inner { background-color:#FEFEFA;}
 html {
   background:url(background.jpg) center center no-repeat fixed;
   background-size:cover;
