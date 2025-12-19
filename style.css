@@ -101,10 +101,8 @@ body {
   margin:45px auto;
 }
   .Robofashion {
-    border: transparent;
-    background:url(images/robofashion.jpg);
-    padding: 10px; 
-    margin: 10px;
+    background:url(images/robofashion.jpg) center center no-repeat fixed;
+    background-size:cover;
       }
   
 header, #content, footer { 
