@@ -100,13 +100,26 @@ body {
   max-width:1000px;
   margin:45px auto;
 }
+  .Robofashion {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(images/robofashion.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+      }
+  
 header, #content, footer { 
-  background: rgba(173, 216, 230, 0.5);
   padding:25px; 
 }
 iframe {
   max-width:100%;
+
 }
+
+
 
 /* Menu Links */
 ul.main-menu {
@@ -130,6 +143,7 @@ ul.main-menu li a.active {
   color:#FFFFFF;
   border-bottom-color: solid transparent;
 }
+
 
 /* Utility classes */
 .hide {
