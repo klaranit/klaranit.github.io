@@ -100,12 +100,12 @@ body {
   max-width:1000px;
   margin:45px auto;
 }
-  .Robofashion {
+  .column1 {
     width: 40px;
     height:30px;
   }
-  .Robofashion-img {
-    width:100%;
+  .column-img {
+    width:50%;
     height:auto;
     object-fit:contain;
       }
