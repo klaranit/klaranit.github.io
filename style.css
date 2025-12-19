@@ -107,7 +107,7 @@ body {
     gap: 10px;
     padding: 10px;
   }
-  .column1-img {
+  .column-img {
     width:100%;
     height:auto;
     object-fit:contain;
