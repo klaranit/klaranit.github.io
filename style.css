@@ -102,6 +102,7 @@ body {
 }
   
 header, #content, footer { 
+  background-color: #1a1918;
   padding:25px; 
 }
 iframe {
