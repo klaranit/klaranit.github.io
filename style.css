@@ -132,9 +132,7 @@ ul.main-menu li a.active {
   border-bottom-color: solid transparent;
 }
 
-**
- * Project Grid Styles
- */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -157,7 +155,7 @@ ul.main-menu li a.active {
 
 .project-card-image {
   width: 100%;
-  height: 200px;
+  height: 100px;
   object-fit: cover;
   display: block;
 }
