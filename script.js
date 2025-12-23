@@ -23,7 +23,7 @@
   
   // Handle project card clicks
   $('.project-card').on('click', function() {
-    var projectId = $(this).attr('data-project');
+    var projectId = $(this).attr('id');
     
     // Hide all content regions
     $('.content-region').hide();
