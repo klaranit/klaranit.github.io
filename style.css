@@ -1,7 +1,6 @@
 /**
  * Typography & Text styles
  */
-
 /* html is set to 62.5% so that all the REM measurements are based on 10px sizing. So basically 1.5rem = 15px */
 html {
   font-size: 62.5%;
@@ -13,7 +12,6 @@ body {
   font-family: "EB Garamond";
   color: #1a1918;
 }
-
 /**
  * Links
  */
@@ -25,11 +23,9 @@ a {
 a:focus {
   outline: thin dotted;
 }
-
 small {
   font-size: 75%;
 }
-
 /**
  * Headings
  */
@@ -51,7 +47,6 @@ h3 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h4 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h5 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
-
 /**
  * Paragraphs
  */
@@ -59,9 +54,7 @@ p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
 p + p {
-
 }
-
 /**
  * Quotes & Blockquotes
  */
@@ -74,7 +67,6 @@ q:before {
 q:after {
   content: close-quote;
 }
-
 blockquote {
   /* background-color: ##3D85C6; */
   border-left: 2px solid #ffffff;
@@ -85,11 +77,9 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;  
 }
-
 /**
  * Layout styles
  */
-
 /* Full size background image */
 html, #container, .inner { background-color:#ffffff;}
 html {
@@ -106,9 +96,7 @@ header, #content, footer {
 }
 iframe {
   max-width:100%;
-
 }
-
 /* Menu Links */
 ul.main-menu {
   margin: 0;
@@ -131,15 +119,12 @@ ul.main-menu li a.active {
   color:#bf720d;
   border-bottom-color: solid transparent;
 }
-
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
   padding: 20px 0;
 }
-
 .project-card {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
@@ -147,46 +132,43 @@ ul.main-menu li a.active {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px; 
-  color:#bf720d;
+  color:#ac9b19;
 }
-
 .project-card-image {
   width: 100%;
   height: 100px;
   object-fit: cover;
   display: block;
 }
-
 .project-card-content {
   padding: 20px;
 }
-
 .project-card-title {
   font-size: 2.0rem;
   margin-bottom: 10px;
   color: #1a1918;
 }
-
 .project-card-description {
   font-size: 1.4rem;
   color: #666;
   margin-bottom: 0;
 }
-
 /**
  * Project Detail Page Styles
  */
+#project-details-section {
+  margin-top: 20px;
+}
+
 .project-detail {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   padding: 30px;
   margin: 20px 0;
 }
-
 .project-detail-image {
   width: 100%;
   max-width: 100%;
@@ -194,26 +176,30 @@ ul.main-menu li a.active {
   border-radius: 8px;
   margin-bottom: 20px;
 }
-
 .back-button {
   display: inline-block;
   padding: 10px 20px;
   background: #bf720d;
   color: white;
+  border: none;
   border-radius: 5px;
   margin-bottom: 20px;
+  cursor: pointer;
+  font-family: "EB Garamond";
+  font-size: 1.5rem;
   transition: background 0.3s ease;
 }
-
 .back-button:hover {
   background: #a66209;
   color: white;
 }
-
-
 /* Utility classes */
 .hide {
-  display:none !important;
+  display:none;
+}
+
+.show {
+  display:block;
 }
 
 /* Responsive adjustments */
@@ -222,7 +208,4 @@ ul.main-menu li a.active {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
   }
-  
-.show {
-  display:block;
 }
