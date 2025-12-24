@@ -151,7 +151,7 @@ ul.main-menu li a.active {
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px; 
-  color:#bf720d;
+  color:#ac9b19;
 }
 
 .project-card-image {
