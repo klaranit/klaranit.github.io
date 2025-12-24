@@ -2,7 +2,6 @@
 (function ($) {
   
   // We use some Javascript and the URL #fragment to hide/show different parts of the page
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
   $(window).on('load hashchange', function(){
     
     // First hide all content regions by adding the hide class
@@ -10,7 +9,9 @@
     
     // Remove any active classes on the main-menu
     $('.main-menu a').removeClass('active');
-    var region = location.hash.toString() || $('.main-menu a:first').attr('href');
+    
+    // Get the current hash or default to first menu item
+    var region = location.hash.toString() || '#aboutme';
     
     // Now show the region specified in the URL hash by removing the hide class
     $(region).removeClass('hide');
@@ -21,23 +22,27 @@
   });
   
   // Handle project card clicks
-  $(document).on('click', '.project-card', function() {
+  $(document).on('click', '.project-card', function(e) {
+    e.preventDefault();
     var projectId = $(this).attr('data-project');
     
-    // Hide all content regions by adding the hide class
+    // Hide all content regions
     $('.content-region').addClass('hide');
     
-    // Show the specific project detail page by removing the hide class
+    // Show the specific project detail page
     $('#project-' + projectId).removeClass('hide');
     
-    // Update the URL hash (for back button support)
-    location.hash = '#project-' + projectId;
+    // Remove active class from menu
+    $('.main-menu a').removeClass('active');
+    
+    // Update the URL hash
+    window.location.hash = 'project-' + projectId;
   });
   
   // Handle back button clicks
   $(document).on('click', '.back-button', function(e) {
     e.preventDefault();
-    location.hash = '#projects';
+    window.location.hash = 'projects';
   });
   
-})(jQuery);   
+})(jQuery);
