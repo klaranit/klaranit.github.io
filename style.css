@@ -135,7 +135,7 @@ ul.main-menu li a.active {
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px; 
-  color:#ac9b19;
+  color:#bf720d;
 }
 .project-card-image {
   width: 100%;
@@ -171,7 +171,7 @@ ul.main-menu li a.active {
 }
 .project-detail-image {
   width: 100%;
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -183,7 +183,7 @@ ul.main-menu li a.active {
   color: white;
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
   font-family: "EB Garamond";
   font-size: 1.5rem;
