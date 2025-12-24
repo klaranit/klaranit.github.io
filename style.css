@@ -213,7 +213,7 @@ ul.main-menu li a.active {
 
 /* Utility classes */
 .hide {
-  display:none;
+  display:none !important;
 }
 
 /* Responsive adjustments */
