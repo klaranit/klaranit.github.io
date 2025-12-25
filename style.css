@@ -129,11 +129,10 @@ ul.main-menu li a.active {
 }
 
 .column-image {
-  width: 100px;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
 }
 
 .projects-grid {
