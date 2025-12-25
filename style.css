@@ -95,6 +95,10 @@ header, #content, footer {
   padding:25px;
 }
 
+#floated{
+    float: left;
+    width: 150px;
+    background: red;
 }
 iframe {
   max-width:100%;
@@ -122,12 +126,8 @@ ul.main-menu li a.active {
   border-bottom-color: solid transparent;
 }
 
-.column {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:20px;
-  padding: 10px;
-  border: 1px transparent;
+.page-format {
+  display: 
 }
 
 
