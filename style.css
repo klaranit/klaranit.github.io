@@ -111,6 +111,14 @@ header, #content, footer {
   margin-bottom: 10px;
 }
 
+.right-column {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
 #floated{
     float: left;
     width: 150px;
