@@ -199,10 +199,8 @@ ul.main-menu li a.active {
 }
 .project-detail-image {
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  max-height: 100px;
+  padding:20px;
 }
 .back-button {
   display: inline-block;
