@@ -97,9 +97,13 @@
             
             <!-- Projects Grid -->
             <div class="projects-grid">
+              <button class="btn active" onclick="filterSelection('all')"> Show all </button>
+                <button class="btn" onclick="filterSelection('robots')"> Robots </button>
+                <button class="btn" onclick="filterSelection('handwriting')"> Handwriting </button>
+                <button class="btn" onclick="filterSelection('materiality')"> Materiality </button>
               
               <!-- Project 1: Robot Fashion -->
-              <div class="project-card" data-project="robofashion">
+              <div class="project-card robots " data-project="robofashion">
                 <img src="images/robofashion.jpg" alt="Robot Fashion" class="project-card-image">
                 <div class="project-card-content">
                   <h3 class="project-card-title">Robot Fashion</h3>
@@ -108,7 +112,7 @@
               </div>
 
               <!-- Project 2: BioTelia -->
-              <div class="project-card" data-project="biotelia">
+              <div class="project-card robots" data-project="biotelia">
                 <img src="images/biotelia.jpg" alt="Biotelia" class="project-card-image">
                 <div class="project-card-content">
                   <h3 class="project-card-title">BioTelia</h3>
@@ -117,7 +121,7 @@
               </div>
 
               <!-- Project 3: Code of Conduct -->
-              <div class="project-card" data-project="codeofconduct">
+              <div class="project-card handwriting" data-project="codeofconduct">
                 <img src="images/codeofconduct.jpg" alt="Code of Conduct Typeface" class="project-card-image">
                 <div class="project-card-content">
                   <h3 class="project-card-title">Code of Conduct</h3>
@@ -126,7 +130,7 @@
               </div>
                  
               <!-- Project 4: AI Literacy Puppet -->
-              <div class="project-card" data-project="aipuppet">
+              <div class="project-card materiality" data-project="aipuppet">
                 <img src="images/aipuppet.jpg" alt="AI Puppet" class="project-card-image">
                 <div class="project-card-content">
                   <h3 class="project-card-title">AI Puppet</h3>
