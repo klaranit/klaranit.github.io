@@ -93,9 +93,6 @@ body {
   
 header, #content, footer { 
   padding:25px;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:20px;
 }
 iframe {
   max-width:100%;
@@ -124,6 +121,9 @@ ul.main-menu li a.active {
 }
 
 .column {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
   padding: 10px;
   border: 1px transparent;
 }
