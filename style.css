@@ -95,36 +95,27 @@ header, #content, footer {
   padding:25px;
 }
 
-.float-left {
-  float: left;
-  width: 150px;
-  height: auto;
-  margin-left: 10px;
-  margin-bottom: 10px;
+*{
+  box-sizing: border-box;
 }
 
-.float-right {
-  float: right;
-  width: 150px;
-  height: auto;
-  margin-left: 10px;
-  margin-bottom: 10px;
+.row{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.right-column {
-  float: right;
-  width: 100%;
-  height: auto;
-  margin-left: 15px;
-  margin-bottom: 15px;
+.side{
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
 }
 
-#floated{
-    float: left;
-    width: 150px;
-    height: 250px;
-    background: red;
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
 }
+
 iframe {
   max-width:100%;
 }
@@ -241,6 +232,10 @@ ul.main-menu li a.active {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
   .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
