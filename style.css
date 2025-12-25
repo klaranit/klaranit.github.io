@@ -112,7 +112,7 @@ header, #content, footer {
 }
 
 .right-column {
-  float: left;
+  float: right;
   width: 100%;
   height: auto;
   margin-left: 15px;
