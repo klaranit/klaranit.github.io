@@ -217,6 +217,27 @@ ul.main-menu li a.active {
   background: #a66209;
   color: white;
 }
+
+.btn {
+  border: none;
+  outline: #bf720d;
+  padding: 5px 5px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "EB Garamond";
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #bf720d;
+    color: white;
+}
+
+.btn:active {
+  background-color: #bf720d;
+    color: white;
+}
 /* Utility classes */
 .hide {
   display:none;
