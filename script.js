@@ -45,6 +45,8 @@
     // Scroll to top
     $('html, body').animate({ scrollTop: 0 }, 300);
   });
+   
+   
   
   // Handle back button clicks
   $(document).on('click', '.back-button', function(e) {
