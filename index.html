@@ -7,7 +7,7 @@
     <meta name="description" content="Klara Nitsche academic research and portfolio">
     <meta name="author" content="Klara Nitsche academic">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
+<!--     <link rel="icon" type="image/png" href="favicon.png"> -->
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
@@ -24,7 +24,7 @@
   
   <body>
     <header id="header">
-      <img src="logo.png" alt="Logo">
+<!--       <img src="logo.png" alt="Logo"> -->
       <h1>Klara Nitsche</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
@@ -144,46 +144,103 @@
               
               <div class="project-detail" data-detail="robofashion" style="display: none;">
                 <button class="back-button">← Back to Projects</button>
-                <h2>Robot Fashion</h2>
-                <img src="images/robofashion.jpg" alt="Robot Fashion Detail" class="project-detail-image">
-                <div class="main">
-                  <h3>Overview</h3>
-                  <p>Experimental 3D printed fashion accessories designed to protect humanoid limbs from damage when falling.</p>
-                  <h3>Details</h3>
-                  <p>Collaboration for HIRO lab.</p>
-                </div>
-                <div class="side">
-                </div>
+                
+                <article class="blog-post">
+                  <h2 class="post-title">Robot Fashion</h2>
+                  
+                  <figure class="post-image">
+                    <img src="images/robofashion.jpg" alt="Robot Fashion Detail">
+                  </figure>
+                  
+                  <section class="post-section">
+                    <h3>Overview</h3>
+                    <p>Experimental 3D printed fashion accessories designed to protect humanoid limbs from damage when falling. Resulted from previous work on 3D printing soft skin for the HIRO group’s Franka robot. Using Blender + GenTact (a Blender extension made by lab member Carson Kholbrenner) I created TPU (thermoplastic polyeurthane) accessories that utilized the material’s soft, bouncy properties to protect the robot’s limbs from excessive force when falling. 
+
+                       <br>
+                          Collaboration with HIRO group at CU Boulder.</br></p>
+                  </section>
+                  
+                  <section class="post-section">
+                    <h3>Skills</h3>
+                    <p>3D printing, CAD design, TPU printing, multimaterial printing</p>
+                      <h3>Topics</h3>
+                    <p>Human-Robot-Interaction, 3D printing, tactile interaction design, fashion</p>
+                     <h3>More Info</h3>
+                    <p><br>After joining the HIRO lab, I began working with PhD student Carson Kholbrenner on his soft robotic skin project, where I learned how to use Blender and Carson’s extension GenTact Toolbox to design skins directly on top the robot’s morphology. Once I was familiar with the routine CAD-to-3D printing pipeline, I began exploring various filaments such as Verashore (a filament that foams at high temperatures) and TPU (a soft, bouncy plastic) to expand sensory interactions between person and robot. I settled on TPU, given its springier properties and ability to contract under pressure and absorb excess force. </br>
+
+<br>Before designing fashion accessories, I was asked to experiment with creating a dual-layer skin using both PLA and TPU to mimic the way our own human skin changes color when gently pressed. I turned to cosplay and diorama building communities for inspiration, particularly interested in the ways they manipulate textures of plastic and foam to evoke other materials. I designed a blunted spiked PLA underlayer, which would press up against a softer upper layer. When colliding with an object this second layer would press down into the blunted PLA spikes, and the tops of the spikes would be seen and registered by an external camera, communicating of a pressure applied to the skin!</br> 
+
+<br>We ultimately decided on using TPU since it provided an easier, one-time printing process. Incorporating conductive PLA in our design to embed tactile sensing into the skin itself turned this into a multi-material printing project! Using the lab’s Prusca XL I learned how to properly prepare, troubleshoot, and print with multiple materials. </br>
+
+<br>The resulting skins were made entirely of TPU and conductive PLA. They were flattened from their original hoop-like structure to limit unexpectedly catching on surrounding objects and adhered to the humanoid’s limbs avoiding joints and being mindful of c-spaces for each limb.g</br></p>
+                  </section>
+                </article>
               </div>
               
               <div class="project-detail" data-detail="biotelia" style="display: none;">
                 <button class="back-button">← Back to Projects</button>
-                <h2>BioTelia</h2>
-                <img src="images/biotelia.jpg" alt="BioTelia Detail" class="project-detail-image">
-                <h3>Overview</h3>
-                <p>Interactive installation using fabric, motion capture, and insect-like robots.</p>
-                <h3>Details</h3>
-                <p>Collaboration for design studio.</p>
+                
+                <article class="blog-post">
+                  <h2 class="post-title">BioTelia</h2>
+                  
+                  <figure class="post-image">
+                    <img src="images/biotelia.jpg" alt="BioTelia Detail">
+                  </figure>
+                  
+                  <section class="post-section">
+                    <h3>Overview</h3>
+                    <p>Interactive installation using fabric, motion capture, and insect-like robots.</p>
+                  </section>
+                  
+                  <section class="post-section">
+                    <h3>Details</h3>
+                    <p>Collaboration for design studio.</p>
+                  </section>
+                </article>
               </div>
               
               <div class="project-detail" data-detail="codeofconduct" style="display: none;">
                 <button class="back-button">← Back to Projects</button>
-                <h2>Code of Conduct</h2>
-                <img src="images/codeofconduct.jpg" alt="Code of Conduct Detail" class="project-detail-image">
-                <h3>Overview</h3>
-                <p>Typeface created from 2000+ handwriting samples collected across CU Boulder whiteboards.</p>
-                <h3>Details</h3>
-                <p>Add your details here.</p>
+                
+                <article class="blog-post">
+                  <h2 class="post-title">Code of Conduct</h2>
+                  
+                  <figure class="post-image">
+                    <img src="images/codeofconduct.jpg" alt="Code of Conduct Detail">
+                  </figure>
+                  
+                  <section class="post-section">
+                    <h3>Overview</h3>
+                    <p>Typeface created from 2000+ handwriting samples collected across CU Boulder whiteboards.</p>
+                  </section>
+                  
+                  <section class="post-section">
+                    <h3>Details</h3>
+                    <p>Add your details here.</p>
+                  </section>
+                </article>
               </div>
               
               <div class="project-detail" data-detail="aipuppet" style="display: none;">
                 <button class="back-button">← Back to Projects</button>
-                <h2>AI Puppet</h2>
-                <img src="images/aipuppet.jpg" alt="AI Puppet Detail" class="project-detail-image">
-                <h3>Overview</h3>
-                <p>Puppet to educate children on AI literacy through creating a personalized agent.</p>
-                <h3>Details</h3>
-                <p>Add your details here.</p>
+                
+                <article class="blog-post">
+                  <h2 class="post-title">AI Puppet</h2>
+                  
+                  <figure class="post-image">
+                    <img src="images/aipuppet.jpg" alt="AI Puppet Detail">
+                  </figure>
+                  
+                  <section class="post-section">
+                    <h3>Overview</h3>
+                    <p>Puppet to educate children on AI literacy through creating a personalized agent.</p>
+                  </section>
+                  
+                  <section class="post-section">
+                    <h3>Details</h3>
+                    <p>Add your details here.</p>
+                  </section>
+                </article>
               </div>
               
             </div>
@@ -205,6 +262,34 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
+    
+    <script>
+    // Filter functionality
+    function filterSelection(category) {
+      var cards = document.getElementsByClassName("project-card");
+      
+      if (category == "all") {
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].style.display = "block";
+        }
+      } else {
+        for (var i = 0; i < cards.length; i++) {
+          if (cards[i].classList.contains(category)) {
+            cards[i].style.display = "block";
+          } else {
+            cards[i].style.display = "none";
+          }
+        }
+      }
+      
+      // Update active button
+      var btns = document.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+      }
+      event.target.classList.add("active");
+    }
+    </script>
     
   </body>
 </html>
