@@ -25,40 +25,29 @@
     }
     
   });
-  
-  // Handle project card clicks
+    
+   // Handle project card clicks
   $(document).on('click', '.project-card', function() {
     var projectId = $(this).attr('data-project');
-    
-    // Hide the projects grid
+  
     $('.projects-grid').hide();
-    
-    // Show the project details section
+    $('.filter-buttons').hide();        // ← add this line
+  
     $('#project-details-section').show();
-    
-    // Hide all project details
     $('.project-detail').hide();
-    
-    // Show the specific project detail
     $('.project-detail[data-detail="' + projectId + '"]').show();
-    
-    // Scroll to top
     $('html, body').animate({ scrollTop: 0 }, 300);
   });
    
    
-  
-  // Handle back button clicks
-  $(document).on('click', '.back-button', function(e) {
+    
+    $(document).on('click', '.back-button', function(e) {
     e.preventDefault();
-    
-    // Hide project details section
+  
     $('#project-details-section').hide();
-    
-    // Show projects grid
     $('.projects-grid').show();
-    
-    // Scroll to top
+    $('.filter-buttons').show();        // ← add this line
+  
     $('html, body').animate({ scrollTop: 0 }, 300);
   });
   
