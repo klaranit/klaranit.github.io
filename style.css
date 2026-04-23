@@ -8,7 +8,7 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Cormorant Garamond";
+  font-family: "Noto Sans";
   color: #1a1918;
 }
 
@@ -38,10 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
-  font-family: "Cormorant Garamond"; /* <-- change this to your chosen font */
+  font-family: "Noto Sans"; /* <-- change this to your chosen font */
 }
 h1 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
-h2 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h2 { font-size: 3.6rem; line-height: 1.3; letter-spacing: -.15rem; margin-bottom: 2.4rem; padding-bottom: 1.2rem; border-bottom: 1px solid #f0ece8; }
 h3 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; margin-bottom: 1rem; }
 h4 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; margin-bottom: 0.5rem; }
 h5 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
@@ -52,6 +52,12 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 1.5em auto;
+}
+
+#aboutme, #projects, #contact {
+  padding-top: 12px;
+  padding-bottom: 60px;
+  min-height: 60vh;
 }
 
 #aboutme p {
@@ -95,14 +101,20 @@ html {
 }
 body {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 32px;
   box-sizing: border-box;
 }
 
 header, #content, footer {
-  padding: 25px 20px;
+  padding: 40px 24px;
+}
+
+header#header {
+  padding: 40px 24px 24px;
+  border-bottom: 0.5px solid #e8e4df;
+  margin-bottom: 20px;
 }
 
 * {
@@ -242,7 +254,7 @@ ul.main-menu li a.active {
 
 .project-card-image {
   width: 100%;
-  height: 140px;
+  height: 180px;
   object-fit: cover;
   display: block;
 }
@@ -299,14 +311,14 @@ ul.main-menu li a.active {
 .project-detail {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 6px;
-  padding: 40px;
+  padding: 60px;
   margin: 20px 0;
-  max-width: 800px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 .blog-post {
-  max-width: 700px;
+  max-width: 820px;
   margin: 0 auto;
 }
 .post-title {
@@ -373,11 +385,11 @@ ul.main-menu li a.active {
  */
 @media (max-width: 768px) {
   body {
-    padding: 0 12px;
+    padding: 0 16px;
     margin: 20px auto;
   }
   header, #content, footer {
-    padding: 16px 12px;
+    padding: 20px 16px;
   }
   h1 { font-size: 2.8rem; }
   h2 { font-size: 2.4rem; }
