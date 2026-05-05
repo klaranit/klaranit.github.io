@@ -1,277 +1,262 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Klara Nitsche</title>
-    <meta name="description" content="Klara Nitsche academic research and portfolio">
-    <meta name="author" content="Klara Nitsche academic">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Klara Nitsche</title>
+  <meta name="description" content="Klara Nitsche academic research and portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
 
-    <!-- Stylesheets -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+<div id="site-wrapper">
 
-    <!--
-      Font options for headers — uncomment ONE and update font-family in style.css h1-h6:
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
-    -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto-Sans:wght@300;400&display=swap" rel="stylesheet">
-
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  </head>
-
-  <body>
-    <header id="header">
-      <h1>Klara Nitsche</h1>
+  <!-- SIDEBAR -->
+  <header id="header">
+    <h1><a href="#aboutme">Klara Nitsche</a></h1>
+    <nav>
       <ul class="main-menu">
-        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#aboutme">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </header>
+    </nav>
+  </header>
 
-    <div id="container">
-      <div class="inner">
-        <div id="content">
+  <!-- MAIN -->
+  <main id="main">
 
-          <!-- ABOUT ME -->
-          <div id="aboutme" class="content-region hide">
-            <h2>About Me</h2>
-            <p>
-              I am curious about the influence of materiality in technology. Analog and digital objects alike rely on their visual, physical, and social design for intuitive interaction.
-              But with the rapid increase in automated, agentic, and responsive objects — how do these markers of interaction change? My work explores unconventional, overlooked, and unfamiliar presentations of objects to prod at these boundaries.
-            </p>
-
-            <!-- CV Card -->
+    <!-- ABOUT -->
+    <section id="aboutme" class="content-region hide">
+      <div class="section-inner">
+        <h2>About Me</h2>
+        <div class="about-layout">
+          <div class="about-photo">
+            <img src="images/mephoto.jpg" alt="Photo of Klara Nitsche">
+          </div>
+          <div class="about-text">
+            <p>I am curious about the influence of materiality in technology. Analog and digital objects alike rely on their visual, physical, and social design for intuitive interaction. But with the rapid increase in automated, agentic, and responsive objects — how do these markers of interaction change? My work explores unconventional, overlooked, and unfamiliar presentations of objects to prod at these boundaries.</p>
             <a href="cv.pdf" class="cv-card" target="_blank">
-              <span class="cv-card-icon">&#128196;</span>
-              <span class="cv-card-text">
-                <span class="cv-card-title">Curriculum Vitae</span>
-                <span class="cv-card-sub">PDF · Updated 2026</span>
+              <span class="cv-icon">&#128196;</span>
+              <span class="cv-text">
+                <span class="cv-title">Curriculum Vitae</span>
+                <span class="cv-sub">PDF · Updated 2026</span>
               </span>
             </a>
-
-            <div class="row">
-              <div class="side">
-                <img src="images/mephoto.jpg" alt="Photo of Klara Nitsche" style="width:100%;height:200px;object-fit:cover;">
-              </div>
-              <div class="main">
-                <h3>Research
-              </div>
-            </div>
+            <h3>Research</h3>
+            <p>...</p>
           </div>
-
-          <!-- PROJECTS -->
-          <div id="projects" class="content-region hide">
-            <h2>Projects</h2>
-            <p>My works range from art installations, typefaces, reports, and robot simulations.</p>
-
-              <div class="filter-buttons">
-              <button class="btn active" onclick="filterSelection('all')"> Show all </button>
-              <button class="btn" onclick="filterSelection('robots')"> Robots &amp; AI </button>
-              <button class="btn" onclick="filterSelection('handwriting')"> Handwriting </button>
-              <button class="btn" onclick="filterSelection('materiality')"> Materiality </button>
-            </div>
-
-            <div class="projects-grid">
-
-              <div class="project-card robots" data-project="robofashion">
-                <img src="images/robofashion.png" alt="Robot Fashion" class="project-card-image">
-                <div class="project-card-content">
-                  <h3 class="project-card-title">Robot Fashion</h3>
-                  <p class="project-card-description">Experimental 3D printed fashion accessories designed to protect humanoid limbs.</p>
-                </div>
-              </div>
-
-              <div class="project-card robots" data-project="biotelia">
-                <img src="images/biotelia.png" alt="Biotelia" class="project-card-image">
-                <div class="project-card-content">
-                  <h3 class="project-card-title">BioTelia</h3>
-                  <p class="project-card-description">Interactive installation using insectoid robots.</p>
-                </div>
-              </div>
-
-              <div class="project-card handwriting" data-project="codeofconduct">
-                <img src="images/codeofconduct.png" alt="Code of Conduct Typeface" class="project-card-image">
-                <div class="project-card-content">
-                  <h3 class="project-card-title">Code of Conduct</h3>
-                  <p class="project-card-description">Typeface created from 2000+ handwriting samples collected across CU Boulder whiteboards.</p>
-                </div>
-              </div>
-
-              <div class="project-card robots" data-project="aipuppet">
-                <img src="images/aipuppet.png" alt="AI Puppet" class="project-card-image">
-                <div class="project-card-content">
-                  <h3 class="project-card-title">AI Puppet</h3>
-                  <p class="project-card-description">Puppet to educate children on AI literacy through creating a personalized agent.</p>
-                </div>
-              </div>
-
-              <div class="project-card materiality handwriting" data-project="bathesis">
-                <img src="images/bathesis.jpg" alt="BA Thesis" class="project-card-image">
-                <div class="project-card-content">
-                  <h3 class="project-card-title">Punk Posters: BA Honors Thesis</h3>
-                  <p class="project-card-description">Mixed methods archival study of punk posters relating to handwriting, materiality, and scene representation.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Project Detail Pages -->
-            <div id="project-details-section" style="display: none;">
-
-              <div class="project-detail" data-detail="robofashion" style="display: none;">
-                <button class="back-button">← Back to Projects</button>
-                <article class="blog-post">
-                  <h2 class="post-title">Robot Fashion</h2>
-                  <img src="images/robofashionme.jpg" alt="Photo of me next to Unitree Humanoid wearing its accessory!" style="width:400px;height:100%">
-                  <img src="images/roboaccessory.png" alt="Front and back of TPU robot arm accessory" style="float:right;width:300px;height:100%">
-                  <section class="post-section">
-                    <h3>Overview</h3>
-                    <p>Experimental 3D printed fashion accessories designed to protect humanoid limbs from damage when falling. Resulted from previous work on 3D printing soft skin for the HIRO group's Franka robot. Using Blender + GenTact (a Blender extension made by lab member Carson Kholbrenner) I created TPU (thermoplastic polyurethane) accessories that utilized the material's soft, bouncy properties to protect the robot's limbs from excessive force when falling.<br><br>
-                    Collaboration with HIRO group at CU Boulder.</p>
-                  </section>
-                  <section class="post-section">
-                    <h3>Skills</h3>
-                    <p>3D printing, CAD design, TPU printing, multimaterial printing</p>
-                    <h3>Topics</h3>
-                    <p>Human-Robot-Interaction, 3D printing, tactile interaction design, fashion</p>
-                    <h3>More Info</h3>
-                    <p>After joining the HIRO lab, I began working with PhD student Carson Kholbrenner on his soft robotic skin project, where I learned how to use Blender and Carson's extension GenTact Toolbox to design skins directly on top of the robot's morphology. Once I was familiar with the routine CAD-to-3D printing pipeline, I began exploring various filaments such as Verashore (a filament that foams at high temperatures) and TPU (a soft, bouncy plastic) to expand sensory interactions between person and robot. I settled on TPU, given its springier properties and ability to contract under pressure and absorb excess force.<br><br>
-                    Before designing fashion accessories, I was asked to experiment with creating a dual-layer skin using both PLA and TPU to mimic the way our own human skin changes color when gently pressed. I turned to cosplay and diorama building communities for inspiration, particularly interested in the ways they manipulate textures of plastic and foam to evoke other materials. I designed a blunted spiked PLA underlayer, which would press up against a softer upper layer. When colliding with an object this second layer would press down into the blunted PLA spikes, and the tops of the spikes would be seen and registered by an external camera, communicating pressure applied to the skin!<br><br>
-                    We ultimately decided on using TPU since it provided an easier, one-time printing process. Incorporating conductive PLA in our design to embed tactile sensing into the skin itself turned this into a multi-material printing project! Using the lab's Prusa XL I learned how to properly prepare, troubleshoot, and print with multiple materials.<br><br>
-                    The resulting skins were made entirely of TPU and conductive PLA. They were flattened from their original hoop-like structure to limit unexpectedly catching on surrounding objects and adhered to the humanoid's limbs avoiding joints and being mindful of configuration spaces for each limb.</p>
-                  </section>
-                </article>
-              </div>
-
-              <div class="project-detail" data-detail="biotelia" style="display: none;">
-                <button class="back-button">← Back to Projects</button>
-                <article class="blog-post">
-                  <h2 class="post-title">BioTelia</h2>
-                  <figure class="post-image">
-                    <img src="images/biotelia.png" alt="BioTelia Detail">
-                  </figure>
-                  <section class="post-section">
-                    <h3>Overview</h3>
-                    <p>Interactive installation using fabric, motion capture, and insect-like robots. Positioning the audience as a pollinator in our ecosystem, BioTelia combines robotics, materiality, and performance technology to create an alien environment that echoes systems of our own world. Each 'pollinator' was tracked by a colorful light that changed when subjects came in contact with the larger tree-like structures. I was in charge of designing the robots, which acted as secondary pollinators next to the humans. Each robot had different interaction properties — resulting in different reactions and projected personalities from the audience!<br><br>
-                    Collaboration with Shalimar Alvarado Cruz, Aaron Neyer, Cambria Klinger, Ayesha Rawal for ATLAS design studio course.</p>
-                  </section>
-                  <section class="post-section">
-                    <h3>Skills</h3>
-                    <p>Motion capture, interaction design, object characterization</p>
-                    <h3>Topics</h3>
-                    <p>Human-Robot-Interaction</p>
-                    <h3>More Info</h3>
-                    <p>Collaboration for design studio.</p>
-                  </section>
-                </article>
-              </div>
-
-              <div class="project-detail" data-detail="codeofconduct" style="display: none;">
-                <button class="back-button">← Back to Projects</button>
-                <article class="blog-post">
-                  <h2 class="post-title">Code of Conduct</h2>
-                  <figure class="post-image">
-                    <img src="images/codeofconduct.png" alt="Code of Conduct Detail">
-                  </figure>
-                  <section class="post-section">
-                    <h3>Overview</h3>
-                    <p>Typeface created from 2000+ handwriting samples collected across CU Boulder whiteboards. Over three weeks I routinely visited campus whiteboards across the library, classrooms, communal study spaces in disciplines ranging from engineering, English, chemistry, and art. I photographed every board and isolated each letter in the image using MAXQDA, a qualitative coding platform. Then, I digitized each letterform in Adobe Photoshop and assembled them all into a typeface using Glyphs Mini. The resulting typeface is a record of CU Boulder student handwriting, and the type specimen re-imagines public school signage in their voice.</p>
-                  </section>
-                  <section class="post-section">
-                    <h3>Skills</h3>
-                    <p>Data collection and analysis, digital typography design. Tools: Adobe, Glyphs, MAXQDA</p>
-                    <h3>Topics</h3>
-                    <p>Handwriting, community spaces, data visualization</p>
-                  </section>
-                </article>
-              </div>
-
-              <div class="project-detail" data-detail="aipuppet" style="display: none;">
-                <button class="back-button">← Back to Projects</button>
-                <article class="blog-post">
-                  <h2 class="post-title">AI Puppet</h2>
-                  <figure class="post-image">
-                    <img src="images/aipuppetpres.jpg" alt="AI Puppet Detail">
-                  </figure>
-                  <section class="post-section">
-                    <h3>Overview</h3>
-                    <p>Puppet to educate children on AI literacy through creating a personalized agent. Demonstrated at ATLAS Open Labs, participants could create their own 'puppet' by describing personality attributes, speech restrictions, and drawing out their puppet on a sticky note. The sticky note was then placed beside the screen, so participants could look at it while verbally conversing with their constructed AI agent. This project is still in progress and positioned to collaborate with local Boulder schools to teach students about the limitations, hallucinations, and abilities of AI agents to promote AI literacy.<br><br>
-                    Collaboration with ACME lab members Krithik Ranjan and Suibi Che-Chuan Weng.</p>
-                  </section>
-                  <section class="post-section">
-                    <h3>Skills</h3>
-                    <p>Qualitative analysis, coding</p>
-                    <h3>Topics</h3>
-                    <p>AI, human-AI interaction, educational tools</p>
-                  </section>
-                </article>
-              </div>
-
-              <div class="project-detail" data-detail="bathesis" style="display: none;">
-                <button class="back-button">← Back to Projects</button>
-                <article class="blog-post">
-                  <h2 class="post-title">Punk Posters: BA Honors Thesis</h2>
-                  <figure class="post-image">
-                    <img src="images/bathesis.jpg" alt="BA Thesis Detail">
-                  </figure>
-                  <section class="post-section">
-                    <h3>Overview</h3>
-                    <p>Mixed methods archival study of punk posters relating to handwriting, materiality, and scene representation.</p>
-                  </section>
-                  <section class="post-section">
-                    <h3>Skills</h3>
-                    <p>Qualitative, quantitative, and archival data analysis. Conducted interviews. Coded and analyzed 300+ archived punk posters. Tools: MAXQDA</p>
-                    <h3>Topics</h3>
-                    <p>Materiality, music scenes, punk self-representation, handwriting, community symbols</p>
-                  </section>
-                </article>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- CONTACT -->
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>You can find me at: <a href="mailto:klni1456@colorado.edu">klni1456@colorado.edu</a></p>
-          </div>
-
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 Klara Nitsche. All rights reserved.</p>
-    </footer>
+    <!-- PROJECTS -->
+    <section id="projects" class="content-region hide">
+      <div class="section-inner">
 
-    <script type="text/javascript" src="script.js"></script>
+        <!-- Grid view -->
+        <div id="projects-list-view">
+          <h2>Projects</h2>
+          <p class="section-intro">Works ranging from art installations, typefaces, reports, and robot simulations.</p>
 
-    <script>
-    function filterSelection(category) {
-      var cards = document.getElementsByClassName("project-card");
-      if (category == "all") {
-        for (var i = 0; i < cards.length; i++) {
-          cards[i].style.display = "block";
-        }
-      } else {
-        for (var i = 0; i < cards.length; i++) {
-          if (cards[i].classList.contains(category)) {
-            cards[i].style.display = "block";
-          } else {
-            cards[i].style.display = "none";
-          }
-        }
-      }
-      var btns = document.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].classList.remove("active");
-      }
-      event.target.classList.add("active");
-    }
-    </script>
+          <div class="filter-buttons">
+            <button class="btn active" onclick="filterSelection('all', event)">All</button>
+            <button class="btn" onclick="filterSelection('robots', event)">Robots &amp; AI</button>
+            <button class="btn" onclick="filterSelection('handwriting', event)">Handwriting</button>
+            <button class="btn" onclick="filterSelection('materiality', event)">Materiality</button>
+          </div>
 
-  </body>
+          <div class="projects-grid">
+
+            <div class="project-card robots" data-project="robofashion">
+              <img src="images/robofashion.png" alt="Robot Fashion" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Robots &amp; AI</p>
+                <h3 class="card-title">Robot Fashion</h3>
+                <p class="card-desc">Experimental 3D printed fashion accessories designed to protect humanoid limbs.</p>
+              </div>
+            </div>
+
+            <div class="project-card robots" data-project="biotelia">
+              <img src="images/biotelia.png" alt="Biotelia" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Robots &amp; AI</p>
+                <h3 class="card-title">BioTelia</h3>
+                <p class="card-desc">Interactive installation using insectoid robots.</p>
+              </div>
+            </div>
+
+            <div class="project-card handwriting" data-project="codeofconduct">
+              <img src="images/codeofconduct.png" alt="Code of Conduct" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Handwriting</p>
+                <h3 class="card-title">Code of Conduct</h3>
+                <p class="card-desc">Typeface from 2000+ handwriting samples collected across CU Boulder whiteboards.</p>
+              </div>
+            </div>
+
+            <div class="project-card robots" data-project="aipuppet">
+              <img src="images/aipuppet.png" alt="AI Puppet" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Robots &amp; AI</p>
+                <h3 class="card-title">AI Puppet</h3>
+                <p class="card-desc">Puppet to educate children on AI literacy through a personalized agent.</p>
+              </div>
+            </div>
+
+            <div class="project-card materiality handwriting" data-project="bathesis">
+              <img src="images/bathesis.jpg" alt="BA Thesis" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Materiality · Handwriting</p>
+                <h3 class="card-title">Punk Posters: BA Thesis</h3>
+                <p class="card-desc">Mixed methods archival study of punk posters relating to handwriting and materiality.</p>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- end projects-list-view -->
+
+        <!-- Detail view -->
+        <div id="project-detail-view" style="display:none;">
+          <button class="back-btn">← Back to Projects</button>
+
+          <div class="project-detail" data-detail="robofashion" style="display:none;">
+            <p class="detail-tag">Robots &amp; AI · 3D Printing</p>
+            <h2>Robot Fashion</h2>
+            <p class="detail-collab">Collaboration with HIRO Group, CU Boulder</p>
+            <div class="detail-images">
+              <img src="images/robofashionme.jpg" alt="Me next to Unitree Humanoid">
+              <img src="images/roboaccessory.png" alt="TPU robot arm accessory">
+            </div>
+            <div class="detail-body">
+              <div class="detail-main">
+                <h3>Overview</h3>
+                <p>Experimental 3D printed fashion accessories designed to protect humanoid limbs from damage when falling. Using Blender + GenTact (a Blender extension by Carson Kholbrenner) I created TPU accessories that utilized the material's soft, bouncy properties to protect robot limbs from excessive force.</p>
+                <h3>More Info</h3>
+                <p>After joining the HIRO lab, I worked with PhD student Carson Kholbrenner on his soft robotic skin project, learning Blender and GenTact Toolbox to design skins on the robot's morphology. I explored filaments including Verashore and TPU to expand sensory interactions.</p>
+                <p>I also experimented with a dual-layer skin using PLA and TPU to mimic how human skin changes color when pressed — a blunted spiked PLA underlayer visible to an external camera as a pressure signal. Final skins used TPU and conductive PLA for embedded tactile sensing, printed on a Prusa XL.</p>
+              </div>
+              <aside class="detail-side">
+                <h4>Skills</h4>
+                <p>3D printing, CAD, TPU, multimaterial printing</p>
+                <h4>Topics</h4>
+                <p>HRI, tactile interaction design, fashion</p>
+              </aside>
+            </div>
+          </div>
+
+          <div class="project-detail" data-detail="biotelia" style="display:none;">
+            <p class="detail-tag">Robots &amp; AI · Installation</p>
+            <h2>BioTelia</h2>
+            <p class="detail-collab">With Shalimar Alvarado Cruz, Aaron Neyer, Cambria Klinger, Ayesha Rawal — ATLAS design studio</p>
+            <div class="detail-images">
+              <img src="images/biotelia.png" alt="BioTelia">
+            </div>
+            <div class="detail-body">
+              <div class="detail-main">
+                <h3>Overview</h3>
+                <p>Interactive installation using fabric, motion capture, and insect-like robots. Positioning the audience as a pollinator, BioTelia combines robotics, materiality, and performance technology to create an alien environment echoing systems of our own world. I designed the robots, which acted as secondary pollinators — each with different interaction properties provoking distinct reactions from the audience.</p>
+              </div>
+              <aside class="detail-side">
+                <h4>Skills</h4>
+                <p>Motion capture, interaction design, object characterization</p>
+                <h4>Topics</h4>
+                <p>Human-Robot-Interaction</p>
+              </aside>
+            </div>
+          </div>
+
+          <div class="project-detail" data-detail="codeofconduct" style="display:none;">
+            <p class="detail-tag">Handwriting · Typography</p>
+            <h2>Code of Conduct</h2>
+            <p class="detail-collab">CU Boulder</p>
+            <div class="detail-images">
+              <img src="images/codeofconduct.png" alt="Code of Conduct">
+            </div>
+            <div class="detail-body">
+              <div class="detail-main">
+                <h3>Overview</h3>
+                <p>Typeface created from 2000+ handwriting samples collected across CU Boulder whiteboards. Over three weeks I visited campus whiteboards across the library, classrooms, and communal study spaces in disciplines ranging from engineering to art. Letters were isolated using MAXQDA, digitized in Photoshop, and assembled into a typeface in Glyphs Mini. The type specimen re-imagines public school signage in the voice of CU students.</p>
+              </div>
+              <aside class="detail-side">
+                <h4>Skills</h4>
+                <p>Data collection, digital typography. Tools: Adobe, Glyphs, MAXQDA</p>
+                <h4>Topics</h4>
+                <p>Handwriting, community spaces, data visualization</p>
+              </aside>
+            </div>
+          </div>
+
+          <div class="project-detail" data-detail="aipuppet" style="display:none;">
+            <p class="detail-tag">Robots &amp; AI · Education</p>
+            <h2>AI Puppet</h2>
+            <p class="detail-collab">ACME Lab — with Krithik Ranjan and Suibi Che-Chuan Weng</p>
+            <div class="detail-images">
+              <img src="images/aipuppetpres.jpg" alt="AI Puppet">
+            </div>
+            <div class="detail-body">
+              <div class="detail-main">
+                <h3>Overview</h3>
+                <p>Puppet to educate children on AI literacy through a personalized agent. Demonstrated at ATLAS Open Labs — participants described personality attributes and speech restrictions, drew their puppet on a sticky note, then verbally conversed with their constructed AI agent. In progress; positioned to collaborate with local Boulder schools to teach about AI limitations, hallucinations, and capabilities.</p>
+              </div>
+              <aside class="detail-side">
+                <h4>Skills</h4>
+                <p>Qualitative analysis, coding</p>
+                <h4>Topics</h4>
+                <p>AI, human-AI interaction, educational tools</p>
+              </aside>
+            </div>
+          </div>
+
+          <div class="project-detail" data-detail="bathesis" style="display:none;">
+            <p class="detail-tag">Materiality · Handwriting</p>
+            <h2>Punk Posters: BA Honors Thesis</h2>
+            <p class="detail-collab">CU Boulder, 2025</p>
+            <div class="detail-images">
+              <img src="images/bathesis.jpg" alt="BA Thesis">
+            </div>
+            <div class="detail-body">
+              <div class="detail-main">
+                <h3>Overview</h3>
+                <p>Mixed methods archival study of punk posters relating to handwriting, materiality, and scene representation.</p>
+              </div>
+              <aside class="detail-side">
+                <h4>Skills</h4>
+                <p>Qualitative, quantitative, and archival analysis. Interviews. Coded 300+ archived posters. Tools: MAXQDA</p>
+                <h4>Topics</h4>
+                <p>Materiality, music scenes, punk self-representation, handwriting, community symbols</p>
+              </aside>
+            </div>
+          </div>
+
+        </div><!-- end project-detail-view -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-region hide">
+      <div class="section-inner">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:klni1456@colorado.edu">klni1456@colorado.edu</a></p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+<script>
+  function filterSelection(category, e) {
+    document.querySelectorAll('.project-card').forEach(function(card) {
+      card.style.display = (category === 'all' || card.classList.contains(category)) ? '' : 'none';
+    });
+    document.querySelectorAll('.btn').forEach(function(b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+  }
+</script>
+</body>
 </html>
