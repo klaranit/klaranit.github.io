@@ -39,10 +39,38 @@
             <p>I enjoy playing with texture and saturation in my paintings, which often shows in my graphic design work. Below are some pieces I created throughout various empolyment positions at Emory University and CU Boulder, as well as some of my original works. </p>
           </div>
           <div class="artwork-images">
-            <img src="images/artw1.png" alt="Artwork 1">
+            <button class="artwork-item" type="button" data-title="Color Study" data-description="An exploration of saturated color relationships and layered visual texture.">
+              <img src="images/artw1.png" alt="Abstract artwork with layered colors">
+              <span class="artwork-caption">Color study</span>
+            </button>
+            <button class="artwork-item" type="button" data-title="Material Explorations" data-description="A study of expressive marks and the tactile qualities suggested by painted surfaces.">
+              <img src="images/artw2.png" alt="Abstract artwork with expressive marks">
+              <span class="artwork-caption">Material explorations</span>
+            </button>
+            <button class="artwork-item" type="button" data-title="Form and Texture" data-description="An abstract composition focused on the movement between soft forms and textured edges.">
+              <img src="images/artw3.png" alt="Artwork featuring textured forms">
+              <span class="artwork-caption">Form and texture</span>
+            </button>
+            <button class="artwork-item" type="button" data-title="Saturated Forms" data-description="A color-forward work that uses bold shapes to create rhythm across the canvas.">
+              <img src="images/artw4.png" alt="Artwork featuring saturated colors">
+              <span class="artwork-caption">Saturated forms</span>
+            </button>
           </div>
+        </div>
       </div>
     </section>
+
+    <div id="artwork-modal" class="artwork-modal" hidden>
+      <div class="artwork-modal-backdrop" data-close-artwork></div>
+      <div class="artwork-modal-content" role="dialog" aria-modal="true" aria-labelledby="artwork-modal-title">
+        <button class="artwork-modal-close" type="button" aria-label="Close artwork details" data-close-artwork>&times;</button>
+        <img id="artwork-modal-image" src="" alt="">
+        <div class="artwork-modal-copy">
+          <h3 id="artwork-modal-title"></h3>
+          <p id="artwork-modal-description"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- ABOUT -->
     <section id="aboutme" class="content-region hide">
@@ -77,6 +105,30 @@
           <h2>Projects</h2>
           <p class="section-intro">Works ranging from art installations, typefaces, reports, and robot simulations.</p>
 
+          <div class="project-slideshow" aria-label="Featured projects" tabindex="0">
+            <div class="slides">
+              <figure class="slide active">
+                <img src="images/marshroboexpo.JPG" alt="Marshmallow Robots exhibition">
+                <figcaption>Marshmallow Robots</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/robofashionme.jpg" alt="Robot Fashion accessory">
+                <figcaption>Robot Fashion</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/biotelia.png" alt="BioTelia insectoid robot installation">
+                <figcaption>BioTelia</figcaption>
+              </figure>
+            </div>
+            <button class="slide-control slide-prev" type="button" aria-label="Previous featured project">&lsaquo;</button>
+            <button class="slide-control slide-next" type="button" aria-label="Next featured project">&rsaquo;</button>
+            <div class="slide-dots" role="tablist" aria-label="Featured project slides">
+              <button class="slide-dot active" type="button" role="tab" aria-label="Show Marshmallow Robots" aria-selected="true"></button>
+              <button class="slide-dot" type="button" role="tab" aria-label="Show Robot Fashion" aria-selected="false"></button>
+              <button class="slide-dot" type="button" role="tab" aria-label="Show BioTelia" aria-selected="false"></button>
+            </div>
+          </div>
+
           <div class="filter-buttons">
             <button class="btn active" onclick="filterSelection('all', event)">All</button>
             <button class="btn" onclick="filterSelection('robots', event)">Robots &amp; AI</button>
@@ -88,7 +140,7 @@
 
              <div class="project-card robots materiality" 
              data-project="marshrobo">
-              <img src="images/ATLAS_EXPO.CC78.JPG" alt="AI Puppet" class="card-img">
+              <img src="images/marshroboexpo.JPG" alt="Marshmallow Robots" class="card-img">
               <div class="card-body">
                 <p class="card-tag">Robots &amp; AI</p>
                 <p class="card-tag">Materiality</p>
@@ -107,7 +159,7 @@
             </div>
 
             <div class="project-card robots" data-project="biotelia">
-              <img src="images/biotelia.png" alt="Biotelia" class="card-img">
+              <img src="images/biotelia.jpg" alt="Biotelia" class="card-img">
               <div class="card-body">
                 <p class="card-tag">Robots &amp; AI</p>
                 <h3 class="card-title">BioTelia</h3>
@@ -116,7 +168,7 @@
             </div>
 
             <div class="project-card handwriting" data-project="codeofconduct">
-              <img src="images/codeofconduct.png" alt="Code of Conduct" class="card-img">
+              <img src="images/codeposter.jpg" alt="Code of Conduct" class="card-img">
               <div class="card-body">
                 <p class="card-tag">Handwriting</p>
                 <h3 class="card-title">Code of Conduct</h3>
@@ -125,7 +177,7 @@
             </div>
 
             <div class="project-card robots" data-project="aipuppet">
-              <img src="images/aipuppet.png" alt="AI Puppet" class="card-img">
+              <img src="images/aipuppetpres.jpg" alt="AI Puppet" class="card-img">
               <div class="card-body">
                 <p class="card-tag">Robots &amp; AI</p>
                 <h3 class="card-title">AI Puppet</h3>
