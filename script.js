@@ -2,7 +2,7 @@
 
   // Hash routing: show/hide sections, highlight nav
   $(window).on('load hashchange', function () {
-    var region = location.hash || $('.main-menu a:first').attr('href');
+    var region = location.hash || '#home';
 
     $('.content-region').addClass('hide');
     $('.main-menu a').removeClass('active');
