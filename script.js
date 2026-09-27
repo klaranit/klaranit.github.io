@@ -10,20 +10,31 @@
     $('.main-menu a[href="' + region + '"]').addClass('active');
 
     // Reset project view when navigating away
-    if (region !== '#projects') {
+    if (region !== '#allprojects') {
       $('#projects-list-view').show();
       $('#project-detail-view').hide();
     }
   });
 
-  // Open project detail
-  $(document).on('click', '.project-card', function () {
-    var id = $(this).data('project');
+  function openProject(id) {
     $('#projects-list-view').hide();
     $('#project-detail-view').show();
     $('.project-detail').hide();
     $('.project-detail[data-detail="' + id + '"]').show();
     $('html, body').animate({ scrollTop: 0 }, 250);
+  }
+
+  // Open project detail
+  $(document).on('click', '.project-card', function () {
+    var id = $(this).data('project');
+    if (!$(this).closest('#allprojects').length) {
+      location.hash = '#allprojects';
+      setTimeout(function () {
+        openProject(id);
+      }, 0);
+      return;
+    }
+    openProject(id);
   });
 
   // Back to grid
