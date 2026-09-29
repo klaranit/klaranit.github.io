@@ -98,6 +98,11 @@ ul.main-menu li a.active { color: var(--color-primary); }
   padding: 16px;
 }
 
+#allprojects > .section-inner,
+#artwork > .section-inner {
+  max-width: none;
+}
+
 .section-inner-paper1 {
   background: url('images/papback1.png') no-repeat center center;
   background-size: cover;
@@ -119,6 +124,14 @@ ul.main-menu li a.active { color: var(--color-primary); }
   background-size: cover;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 10px;
+}
+
+.section-inner-paper4 {
+  background: url('images/webscraps.png') no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  margin: 0 auto;
   padding: 16px;
 }
 
@@ -139,7 +152,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .side-pic-left {
   float: left;
   width: 120px;
-  max-width: 32%;
+  max-width: 50%;
   margin: 0.4rem 1.6rem 1rem 0;
 }
 .side-pic-left img,
@@ -202,7 +215,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
 }
 .home-piece {
   display: block;
-  width: 100%;
+  width: 70%;
   transition: transform 0.2s;
 }
 .home-piece img {
@@ -328,7 +341,12 @@ ul.main-menu li a.active { color: var(--color-primary); }
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
-  border-radius: var(--radius);
+}
+
+.name-tag img {
+  width: 100%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
 }
 
 .about-text { flex: 1; min-width: 0; }
@@ -338,31 +356,29 @@ ul.main-menu li a.active { color: var(--color-primary); }
 
 .artwork-layout {
   display: flex;
-  gap: 36px;
+  gap: 32px;
   align-items: flex-start;
 }
 
 .artwork-images {
   flex: 1.5;
   min-width: 0;
-  columns: 2 220px;
-  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 .artwork-item {
   width: 100%;
   min-width: 0;
   display: block;
-  margin: 0 0 16px;
   padding: 0;
   text-align: left;
   font: inherit;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
-  break-inside: avoid;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s;
 }
 .artwork-item img {
   width: 100%;
@@ -374,7 +390,6 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .artwork-item:hover,
 .artwork-item:focus-visible {
   border-color: var(--color-primary);
-  box-shadow: 0 5px 18px rgba(191, 68, 8, 0.14);
   transform: translateY(-3px);
 }
 .artwork-caption {
@@ -406,16 +421,15 @@ ul.main-menu li a.active { color: var(--color-primary); }
   gap: 28px;
   width: min(820px, 100%);
   max-height: min(720px, 90vh);
-  padding: 20px;
+  padding: 10px;
   overflow: auto;
   background: var(--color-bg);
-  border-radius: var(--radius);
 }
 .artwork-modal-content img {
   width: 100%;
   max-height: 75vh;
   object-fit: contain;
-  background: #eee;
+  background: var(--color-bg);
 }
 .artwork-modal-copy { align-self: center; }
 .artwork-modal-copy h3 { margin-top: 0; }
@@ -444,15 +458,13 @@ ul.main-menu li a.active { color: var(--color-primary); }
   align-items: center;
   gap: 12px;
   padding: 12px 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  background: var(--color-surface);
+  background-image: url('images/webtape2.png');
+  background-size: cover;
   font-size: 1.4rem;
   margin: 1rem 0 2.4rem;
   transition: border-color 0.2s, background 0.2s, color 0.2s;
 }
 .cv-card:hover { background: var(--color-accent); border-color: var(--color-primary); color: var(--color-primary); }
-.cv-icon { font-size: 1.7rem; }
 .cv-text { display: flex; flex-direction: column; gap: 2px; }
 .cv-title { font-weight: 500; }
 .cv-sub { font-size: 1.2rem; color: var(--color-muted); }
@@ -469,13 +481,13 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .btn {
   border: 1px color var(--color-background);
   padding: 6px 18px;
-  background-image: url('images/tape4short.png');
+  background-image: url('images/webtape2.png');
   background-size: cover;
   cursor: pointer;
   font-family: var(--font-heading);
   font-size: 1.3rem;
   border-radius: 1px;
-  color: var(--color-primary);
+  color: var(--color-text);
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 .btn:hover { background: var(--color-accent); border-color: var(--color-primary); color: var(--color-primary); }
@@ -486,8 +498,12 @@ ul.main-menu li a.active { color: var(--color-primary); }
    ============================================= */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 3fr));
   gap: 20px;
+}
+
+#allprojects .projects-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-card {
@@ -557,7 +573,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
   margin-bottom: 10px;
   background-image: url('images/tape4short.png');
   background-size: cover;
-  color: var(--color-primary);
+  color: var(--color-bg);
   cursor: pointer;
   font-size: 1.4rem;
   transition: background 0.2s, color 0.2s;
@@ -658,11 +674,13 @@ ul.main-menu li a.active { color: var(--color-primary); }
 
   .artwork-layout { flex-direction: column; }
   .artwork-images { width: 100%; }
+  .artwork-images { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .page-feature { grid-template-columns: 1fr; }
   .page-feature-box { min-height: 0; }
 
   .projects-grid { grid-template-columns: 1fr 1fr; }
+  #allprojects .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-slideshow { height: 180px; }
 
   .detail-body { grid-template-columns: 1fr; }
@@ -671,7 +689,8 @@ ul.main-menu li a.active { color: var(--color-primary); }
 
 @media (max-width: 480px) {
   .projects-grid { grid-template-columns: 1fr; }
-  .artwork-images { columns: 1; }
+  #allprojects .projects-grid { grid-template-columns: 1fr; }
+  .artwork-images { grid-template-columns: 1fr; }
   .artwork-modal-content { grid-template-columns: 1fr; gap: 16px; }
   .project-slideshow { height: 150px; }
   .slide figcaption { left: 14px; bottom: 14px; font-size: 1.6rem; }
