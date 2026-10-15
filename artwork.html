@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Klara Nitsche</title>
+  <meta name="description" content="Klara Nitsche academic research and portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="site-wrapper">
+<header id="header">
+    <h1><a href="index.html">Klara Nitsche</a></h1>
+    <nav>
+      <ul class="main-menu">
+        <li><a href="projects.html">All Projects</a></li>
+        <li><a href="artwork.html" class="active">Artwork</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+<main id="main">
+<section id="artwork" class="content-region">
+      <div class="section-inner">
+        <h2>Artwork</h2>
+        <div class="artwork-layout">
+          <div class="artwork-text">
+            <p>I enjoy playing with texture and saturation in my paintings, which often shows in my graphic design work. Below are some pieces I created throughout various empolyment positions at Emory University and CU Boulder, as well as some of my original works. </p>
+          </div>
+        </div>
+        <div class="artwork-images">
+          <button class="artwork-item" type="button" data-title="Color Study" data-description="An exploration of saturated color relationships and layered visual texture.">
+            <img src="images/artw1.png" alt="Abstract artwork with layered colors">
+            <span class="artwork-caption">Color study</span>
+          </button>
+          <button class="artwork-item" type="button" data-title="Material Explorations" data-description="A study of expressive marks and the tactile qualities suggested by painted surfaces.">
+            <img src="images/artw2.png" alt="Abstract artwork with expressive marks">
+            <span class="artwork-caption">Material explorations</span>
+          </button>
+          <button class="artwork-item" type="button" data-title="Form and Texture" data-description="An abstract composition focused on the movement between soft forms and textured edges.">
+            <img src="images/artw3.png" alt="Artwork featuring textured forms">
+            <span class="artwork-caption">Form and texture</span>
+          </button>
+          <button class="artwork-item" type="button" data-title="Saturated Forms" data-description="A color-forward work that uses bold shapes to create rhythm across the canvas.">
+            <img src="images/artw4.png" alt="Artwork featuring saturated colors">
+            <span class="artwork-caption">Saturated forms</span>
+          </button>
+        </div>
+      </div>
+    </section>
+<div id="artwork-modal" class="artwork-modal" hidden>
+      <div class="artwork-modal-backdrop" data-close-artwork></div>
+      <div class="artwork-modal-content" role="dialog" aria-modal="true" aria-labelledby="artwork-modal-title">
+        <button class="artwork-modal-close" type="button" aria-label="Close artwork details" data-close-artwork>&times;</button>
+        <img id="artwork-modal-image" src="" alt="">
+        <div class="artwork-modal-copy">
+          <h3 id="artwork-modal-title"></h3>
+          <p id="artwork-modal-description"></p>
+        </div>
+      </div>
+    </div>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
