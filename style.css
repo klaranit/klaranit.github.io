@@ -481,7 +481,31 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .btn {
   border: 1px color var(--color-background);
   padding: 6px 18px;
-  background-image: url('images/webtape2.png');
+  background-color: var(--color-surface);
+  background-size: cover;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  border-radius: 1px;
+  color: var(--color-text);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.btnr {
+  border: 1px color var(--color-background);
+  padding: 6px 18px;
+  background-image: url('images/paper3.1.png');
+  background-size: cover;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  border-radius: 1px;
+  color: var(--color-text);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.btna {
+  border: 1px color var(--color-background);
+  padding: 6px 18px;
+  background-image: url('images/paper2.2.png');
   background-size: cover;
   cursor: pointer;
   font-family: var(--font-heading);
@@ -630,8 +654,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .detail-main p { font-size: 1.55rem; line-height: 1.8; }
 
 .detail-side {
-  background: var(--color-accent);
-  border-radius: var(--radius);
+  background: var(--color-surface);
   padding: 20px;
 }
 .detail-side h4 { margin-bottom: 4px; }
