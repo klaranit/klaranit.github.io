@@ -481,8 +481,8 @@ ul.main-menu li a.active { color: var(--color-primary); }
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 2.4rem;
+  gap: 15px;
+  margin-bottom: 4rem;
 }
 .btn {
   border: 1px color var(--color-background);
@@ -491,7 +491,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
   background-size: cover;
   cursor: pointer;
   font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   border-radius: 1px;
   color: var(--color-text);
   transition: background 0.2s, border-color 0.2s, color 0.2s;
@@ -503,7 +503,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
   background-size: cover;
   cursor: pointer;
   font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   border-radius: 1px;
   color: var(--color-text);
   transition: background 0.2s, border-color 0.2s, color 0.2s;
@@ -515,7 +515,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
   background-size: cover;
   cursor: pointer;
   font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   border-radius: 1px;
   color: var(--color-text);
   transition: background 0.2s, border-color 0.2s, color 0.2s;
