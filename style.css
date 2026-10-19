@@ -41,8 +41,8 @@ h1, h2, h3, h4 {
 }
 h1 { font-size: 2.2rem; font-weight: 700; }
 h2 { font-size: 2.8rem; padding-bottom: 1rem; margin-bottom: 2rem;  }
-h3 { font-size: 1.9rem; color: var(--color-primary); margin-top: 2rem; }
-h4 { font-size: 1.4rem; font-family: var(--font-body); font-weight: 500; color: var(--color-primary); margin-bottom: 0.3rem; }
+h3 { font-size: 1.9rem; color: var(--color-muted); margin-top: 2rem; }
+h4 { font-size: 1.4rem; font-family: var(--font-heading); font-weight: 500; color: var(--color-muted); margin-bottom: 0.3rem; }
 h5 { font-size: 2.8rem; padding-bottom: 1rem; margin-bottom: 2rem;  }
 
 /* Layout */
@@ -642,10 +642,9 @@ ul.main-menu li a.active { color: var(--color-primary); }
 }
 
 .detail-images {
-  display: flex;
+  display: block;
   gap: 16px;
   margin-bottom: 3.2rem;
-  flex-wrap: wrap;
 }
 .detail-images img {
   display:block;
