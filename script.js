@@ -1,49 +1,4 @@
 (function ($) {
-  function openProject(id) {
-    var detail = $('.project-detail[data-detail="' + id + '"]');
-    if (!detail.length) return false;
-
-    $('#allprojects').show();
-    $('#roboprojects, #writeprojects').hide();
-    $('#projects-list-view').hide();
-    $('#project-detail-view').show();
-    $('.project-detail').hide();
-    detail.show();
-    $('html, body').animate({ scrollTop: 0 }, 250);
-    return true;
-  }
-
-  function showProjectsRoute() {
-    if (!$('#allprojects').length) return;
-
-    var route = location.hash.slice(1);
-    if (openProject(route)) return;
-
-    $('#project-detail-view').hide();
-    $('#projects-list-view').show();
-    $('#allprojects').show();
-    $('#roboprojects, #writeprojects').hide();
-
-    if (route === 'roboprojects' || route === 'writeprojects') {
-      $('#allprojects').hide();
-      $('#' + route).removeClass('hide').show();
-    }
-  }
-
-  $(window).on('load hashchange', showProjectsRoute);
-
-  $(document).on('click', '.project-card', function () {
-    var id = $(this).data('project');
-    location.hash = id;
-    openProject(id);
-  });
-
-  $(document).on('click', '.back-btn', function () {
-    location.hash = 'allprojects';
-    showProjectsRoute();
-    $('html, body').animate({ scrollTop: 0 }, 250);
-  });
-
   window.filterSelection = function (category, event) {
     document.querySelectorAll('.project-card').forEach(function (card) {
       card.style.display = category === 'all' || card.classList.contains(category) ? '' : 'none';

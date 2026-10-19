@@ -31,15 +31,15 @@
           <div class="slides">
             <figure class="slide active">
               <img src="images/marshroboexpo.JPG" alt="Marshmallow Robots exhibition">
-              <a href="projects.html#marshrobo"><figcaption>Marshmallow Robots</figcaption></a>
+              <a href="project-marshrobo.html"><figcaption>Marshmallow Robots</figcaption></a>
             </figure>
             <figure class="slide">
               <img src="images/robofashionme.jpg" alt="Robot Fashion accessory">
-              <a href="projects.html#robofashion"><figcaption>Robot Fashion</figcaption></a>
+              <a href="project-robofashion.html"><figcaption>Robot Fashion</figcaption></a>
             </figure>
             <figure class="slide">
               <img src="images/biotelia.png" alt="BioTelia insectoid robot installation">
-              <a href="projects.html#biotelia"><figcaption>BioTelia</figcaption></a>
+              <a href="project-biotelia.html"><figcaption>BioTelia</figcaption></a>
             </figure>
           </div>
             <button class="slide-control slide-prev" type="button" aria-label="Previous featured project">&lsaquo;</button>
@@ -68,45 +68,88 @@
         <figure class="side-pic-left">
           <a href="about.html"><img src="images/mesketchscan.png" alt="Stick Figure Me"></a>
         </figure>
-        <p>With a background in <b>sociology, art, and creative technology,</b> I am interested in the effect of materiality on facilitating untraditional human-machine relationships. Currently, I am recontextualizing the robot body as an ephemeral, edible object through my <b><a href="projects.html#marshrobo"> Marshmallow Robots</a></b> and exploring how food materials can be utilized to create culturally charged, computational interactions. </p>
+        <p>With a background in <b>sociology, art, and creative technology,</b> I am interested in the effect materiality has on our relationships with machines. Currently, I am recontextualizing the robot body as an ephemeral, edible object through my <b><a href="project-marshrobo.html"> Marshmallow Robots</a></b> and exploring how food materials can be utilized to create culturally charged, computational interactions. </p>
       </div>
-      <div class="section-inner-paper1">
-        <a class="home-piece home-piece-robo">
-          <img src="images/webrobo1.png" alt="Robotics through Materiality">
-          <img src="images/webrobo1-2.png" alt="" aria-hidden="true">
-        </a>
-        <div class="section-inner">
-         <p>I am currently interested in robots and their fluctuatation between social roles of 'object', 'agent', 'worker', 'pet', and 'companion'. To provoke the limits of these borders, I create robotic prototypes and add materials that embed the robot body with a new dimension of interaction. Then I observe how this variable provokes participant interpretation, engagement, and reflection on robots. My <b><a href="projects.html#marshrobo"> Marshmallow Robot Skins</a></b> were my first foray into this speculative HRI work, and I am interested in continuing to work with materials that bring organic, ephemeral, cyclical, and residuous qualities to the robot body.</p>
-        </div>
       </div>
-      <div class="section-inner-paper3">
-        <a class="home-piece home-piece-write">
-          <img src="images/webwrite11.png" alt="Writing and Documentation">
-          <img src="images/webwrite22.png" alt="" aria-hidden="true">
-        </a>
-        <div class="section-inner">
-         <p>My interest in materiality branches out to another research medium: handwriting. As opposed to the minute interferences physics and electricty can impress on a waddling marshmallow robot to bring it to 'life', human handwriting is unique for its symbolic representation of self and active engagement with an 'other' through material traces. Graffiti, personal notes, and community posters all frame relationships between authors and readers differently based on material and social context around the handwriting. This variety of relationship, interpretation, usage, and intent makes handwriting a rich medium to explore WHY people communicate through certain materials and HOW these insights can be used to develop technology that complements the subtler methods of human communication.</p>
-        </div>
-      </div>
-      <div class="section-inner-paper2">
-      
-        <div class="section-inner">
-          <h2>Research Experience</h2>
-         <p>At CU Boulder I collaborated with the <a href="https://hiro-group.ronc.one" target="_blank" rel="noopener noreferrer"><b>HIRO Lab (Humans Interacting with RObots)</b></a> directed by Dr. Alessandro Roncone. Here, I designed and fabricated multi-material 3D printed robot skins to contribute to ongoing research on embodied intelligence through tactile sensing. I became very familiar working with TPU, verashore, and PLA, as well as the Franka Emika Panda and Unitree H-1 Humanoid robots. I worked closely with robotics PhD students in the lab and enrolled in graduate-level robotics courses to better understand the foundations of SLAM, localization, inverse kinematics, and control systems.</p>
+      <section id="allprojects" class="content-region">
+      <div id="projects-list-view" class="section-inner">
 
-         <p>Also at CU Boulder, I worked in the <a href="https://www.colorado.edu/atlas/acme-lab" target="_blank" rel="noopener noreferrer"><b>ACME Lab</b></a> directed by Dr. Ellen Do. I had the great pleasure to assist in research by: qualitatively analyzing participatory design interview data on human-robot-interaction with elderly adults, designing and piloting an AI literacy 'puppet' to educate elementary school students on the limits of AI, and building my MS capstone project <a href="projects.html#marshrobo"><b>Marshmallow Robot Skins</b></a> under the supervision of Dr. Ellen Do.</p>
+        <!-- Grid view -->
 
-         <p>
-          At Emory University, I assisted <a href="https://tracylscott.org"><b>Dr. Tracy Scott</b></a> in her research on the sociology of the early space era, specifically the emergence of the role of 'astronaut' and the resulting culture within the group of 'astronaut families'. I conducted qualitative image analysis of archival photographs and magazines, documenting how visual depictions of astronauts and their families were presented to the public. 
-         </p>
-        </div>
+          <div class="filter-buttons">
+            <button class="btn active" onclick="filterSelection('all', event)">All</button>
+            <button class="btnr" onclick="filterSelection('research', event)">Research</button>
+            <button class="btna" onclick="filterSelection('art', event)">Art</button>
+          </div>
 
-      </div>
-      <div class="section-inner-paper4">
-        <div class="section-inner">
-         <p></p>
-        </div>
-      </div>
+          <div class="projects-grid">
+
+            <a href="project-marshrobo.html" class="project-card paper-lightpink research">
+              <img src="images/marshroboexpo.JPG" alt="Marshmallow Robots" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Research</p>
+                <h3 class="card-title">Marshmallow Robots</h3>
+                <p class="card-desc">Marshmallow robot skins that explore what edible human-robot-interaction might look like.</p>
+              </div>
+            </a>
+
+            <a href="project-robofashion.html" class="project-card paper-lightpink research">
+              <img src="images/robofashion.png" alt="Robot Fashion" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Research</p>
+                <h3 class="card-title">Robot Fashion</h3>
+                <p class="card-desc">Experimental 3D printed fashion accessories designed to protect humanoid limbs.</p>
+              </div>
+            </a>
+
+            <a href="project-biotelia.html" class="project-card paper-lightpink research">
+              <img src="images/biotelia.jpg" alt="Biotelia" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Research</p>
+                <h3 class="card-title">BioTelia</h3>
+                <p class="card-desc">Interactive installation using insectoid robots.</p>
+              </div>
+            </a>
+
+            <a href="project-codeofconduct.html" class="project-card paper-orange art">
+              <img src="images/codeposter.jpg" alt="Code of Conduct" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Art</p>
+                <h3 class="card-title">Code of Conduct</h3>
+                <p class="card-desc">Typeface from 2000+ handwriting samples collected across CU Boulder whiteboards.</p>
+              </div>
+            </a>
+
+            <a href="project-aipuppet.html" class="project-card paper-lightpink research">
+              <img src="images/aipuppetpres.jpg" alt="AI Puppet" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Research</p>
+                <h3 class="card-title">AI Puppet</h3>
+                <p class="card-desc">Puppet to educate children on AI literacy through a personalized agent.</p>
+              </div>
+            </a>
+
+            <a href="project-bathesis.html" class="project-card paper-lightpink research">
+              <img src="images/bathesis.jpg" alt="BA Thesis" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Research</p>
+                <h3 class="card-title">Punk Posters: BA Thesis</h3>
+                <p class="card-desc">Mixed methods archival study of punk posters relating to handwriting and materiality.</p>
+              </div>
+            </a>
+
+            <a href="project-openexpression.html" class="project-card paper-orange art">
+              <img src="images/openex1.jpg" alt="Open Expression" class="card-img">
+              <div class="card-body">
+                <p class="card-tag">Art</p>
+                <h3 class="card-title">Open Expression</h3>
+                <p class="card-desc">Interactive art installation that replicated school graffiti on a scratch-off blackboard.</p>
+              </div>
+            </a>
+
+          </div>
+        </div><!-- end projects-list-view -->
+
 
     </section>
 </main>
