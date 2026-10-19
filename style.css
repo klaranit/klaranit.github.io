@@ -609,7 +609,7 @@ ul.main-menu li a.active { color: var(--color-primary); }
   border: 1px solid var(--color-background);
   padding: 8px 20px;
   margin-bottom: 10px;
-  background-image: url('images/tape4short.png');
+  background-color: var(--color-surface);
   background-size: cover;
   color: var(--color-bg);
   cursor: pointer;
@@ -648,10 +648,10 @@ ul.main-menu li a.active { color: var(--color-primary); }
   flex-wrap: wrap;
 }
 .detail-images img {
-  flex: 1 1 260px;
+  display:block;
+  width: 100%;
   min-width: 0;
   max-width: 100%;
-  height: 300px;
   object-fit: cover;
   border-radius: var(--radius);
   background: #eee;
